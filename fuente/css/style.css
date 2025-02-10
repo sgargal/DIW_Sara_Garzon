@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Merriweather";
+  src: url("../fonts/Merriweather/Merriweather-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.header {
+  position: relative;
+  background-image: url("../img/IMG_AVIF/1.PaginaInicio/1.ImagenHeroe/heroImage-2304x1536.avif");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+.header h1 {
+  font-family: "Merriweather", sans-serif;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  font-size: 3rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.header h1 span {
+  display: block;
+}
+.header h1 span:nth-child(2) {
+  position: relative;
+  left: 5rem;
+}
+.header nav {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  margin-top: 2rem;
+}
+.header nav .nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+}
+.header nav .nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: color 0.3s;
+}
+.header nav .nav-links li a:hover {
+  color: #d69f4d;
+}
+
+/*# sourceMappingURL=style.css.map */
