@@ -182,6 +182,39 @@
   font-size: 24px;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #7b5836;
+  color: white;
+}
+.footer .texto-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+}
+.footer .texto-footer p {
+  font-family: "Merriweather", "sans-serif";
+  font-size: 1rem;
+  margin: 5px 0;
+}
+.footer .texto-footer p:first-child {
+  font-size: 1.2rem;
+}
+.footer .redesSociales {
+  display: flex;
+  gap: 15px;
+}
+.footer .redesSociales img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 @media (max-width: 768px) {
   .reseña {
     flex-direction: column; /* Apila los elementos en columna en pantallas pequeñas */
