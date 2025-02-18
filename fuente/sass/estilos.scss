@@ -19,6 +19,7 @@
     font-style: normal;
 }
 
+
 body{
     margin: 0;
     padding: 0;
@@ -36,6 +37,7 @@ body{
     color: #fff;
     text-align: center;
     box-shadow: black 0px 0px 10px;
+
     h1{
         font-family: 'Merriweather', sans-serif;
         position: absolute;
@@ -52,6 +54,10 @@ body{
         span:nth-child(2){
             position: relative;
             left: 5rem;
+        }
+
+        &:hover {
+            transform: scale(1.05); // Hacer que el título se agrande un poco al pasar el mouse
         }
         
     }
@@ -98,7 +104,6 @@ body{
         justify-content: center;
     }
     h3{
-        display:flex;
         font-family: 'Merriweather', sans-serif;
         font-size: 2rem;
         margin-top: 0.6rem;
@@ -106,7 +111,6 @@ body{
         text-transform: uppercase;
         letter-spacing:0.1rem;
         text-align: center;
-        align-items: center;
         gap: 10px;
 
         .imgNosotros{
@@ -151,6 +155,21 @@ body{
                 height: 100%;
                 object-fit: cover;
                 transition: transform 0.3s;
+                opacity: 0;
+                transform: translateY(20px);
+
+                .imagen-oculta {
+                    opacity: 0.3;
+                    transform: translateY(50px);
+                    filter: blur(5px);
+                    transition: all 2.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+                }
+
+                &.paricionImg{
+                    opacity: 1;
+                    transform: translateY(0);
+                    filter: blur(0);
+                }
 
                 &:hover{
                     transform: scale(1.05);
@@ -160,9 +179,20 @@ body{
     }
     .map{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 2rem;
+        
+        h3{
+            font-family: 'Merriweather', sans-serif;
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            text-align: center;
+            margin-bottom: 1rem; 
+            color: black;
+        }
 
         iframe{
             width: 100%;
