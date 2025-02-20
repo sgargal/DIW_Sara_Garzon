@@ -1,0 +1,11 @@
+@use 'utils/variables' as *;
+@use 'utils/mixins' as *;
+
+@use 'base/globals' as *;
+
+@use 'layout/main' as *;
+@use 'layout/header' as *;
+@use 'layout/footer' as *;
+
+@use 'components/reseña' as *;
+@use 'components/nav' as *;
