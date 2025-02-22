@@ -1,4 +1,5 @@
 @use '../utils/variables' as *;
+@use '../utils/mixins' as *;
 
 .footer{
     display: flex;
@@ -7,7 +8,7 @@
     padding: 20px;
     background-color: $marron;
     color: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+    @include box-shadow(#5f5f5f, 0px, 0px, 10px, 0px);
 
     .texto-footer{
         display: flex;
@@ -35,6 +36,7 @@
     .redesSociales{
         display: flex;
         gap: 15px;
+        
 
         img{
             width: 40px;
