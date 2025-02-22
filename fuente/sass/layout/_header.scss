@@ -31,8 +31,8 @@
         background-image: inherit; // Toma la imagen de fondo de .header
         z-index: -1; // Asegura que esté detrás del contenido
 
-        @supports(background-image: url('../img/IMG_WEBP/1.PaginaInicio/1.ImagenHeroe/heroImage-3000X3000.webp')) {
-            background-image: url('../img/IMG_WEBP/1.PaginaInicio/1.ImagenHeroe/heroImage-3000X3000.webp');
+        @supports(background-image: url('../img/IMG_WEBP/1.PaginaInicio/1.ImagenHeroe/heroImage-3000X2000.webp')) {
+            background-image: url('../img/IMG_WEBP/1.PaginaInicio/1.ImagenHeroe/heroImage-3000X2000.webp');
         }
     }
     

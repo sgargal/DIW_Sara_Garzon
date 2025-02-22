@@ -35,55 +35,60 @@
         margin-left: 3rem;
         margin-right: 3rem;;
     }
-    .galeria{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        padding: 1rem;
 
-        h3{
-            grid-column: 1 / -1;
-            text-align: center;
-            margin-bottom: 1rem;
+    .galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); // Dos columnas de igual tamaño
+    gap: 10px;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: auto;
+
+    h3 {
+        grid-column: 1 / -1; // Se extiende en todas las columnas
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .imagen-oculta {
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1.5s ease-out, transform 1.5s ease-out, filter 1.5s ease-out;
+        
+        img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; // Mantiene el tamaño sin deformaciones
+        display: block;
+        transition: transform 0.3s ease-in-out, opacity 0.3s;
         }
-        figure{
-            margin:0;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
 
-            &:nth-child(6){
-                grid-column: 1 / -1;
-            }
-
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: transform 0.3s;
-                opacity: 0;
-                transform: translateY(20px);
-
-                &.imagen-oculta {
-                    opacity: 0;
-                    transform: translateY(50px);
-                    filter: blur(10px);
-                    transition: opacity 1.5s ease-out, transform 1.5s ease-out, filter 1.5s ease-out;
-                }
-
-                &.paricionImg{
-                    opacity: 1;
-                    transform: translateY(0);
-                    filter: blur(0);
-                }
-
-                &:hover{
-                    transform: scale(1.05);
-                }
-            }
+        &:hover img {
+        transform: scale(1.05);
+        opacity: 0.8;
         }
+    }
+
+    .paricionImg{
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+
+    // La imagen en la tercera fila ocupará toda la fila (ancho completo)
+    .imagen-oculta:nth-child(6) {
+        grid-column: span 2;
+    }
+
+    .imagen-oculta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 400px; // Ajusta según la altura deseada
+    }
     }
     .map{
         display: flex;
