@@ -38,18 +38,16 @@
     }
 
     .galeria {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); // Dos columnas de igual tamaño
-    gap: 10px;
-    padding: 1rem;
-    max-width: 1200px;
-    margin: auto;
+        @include image-grid(2,10px);
+        padding: 1rem;
+        max-width: 1200px;
+        margin: auto;
 
-    h3 {
-        grid-column: 1 / -1; // Se extiende en todas las columnas
-        text-align: center;
-        margin-bottom: 1rem;
-    }
+         h3 {
+            grid-column: 1 / -1; // Se extiende en todas las columnas
+            text-align: center;
+            margin-bottom: 1rem;
+        }
 
     .imagen-oculta {
         overflow: hidden;
