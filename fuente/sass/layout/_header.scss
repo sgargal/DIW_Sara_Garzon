@@ -2,7 +2,6 @@
 
 .header{
     position: relative;
-    background-image: url('../img/IMG_AVIF/1.PaginaInicio/1.ImagenHeroe/heroImage-3000x2000.avif');
     background-size: cover;
     background-position: center;
     height: 600px;
@@ -13,6 +12,30 @@
     color: $blanco;
     text-align: center;
     box-shadow: black 0px 0px 10px;
+
+    background-image: url('../img/IMG_PNG/1.PaginaInicio/1.ImagenHeroe/heroImage-3000X2000.jpg');
+
+    @supports(background-image: url('../img/IMG_AVIF/1.PaginaInicio/1.ImagenHeroe/heroImage-3000x2000.avif')){
+        background-image: url('../img/IMG_AVIF/1.PaginaInicio/1.ImagenHeroe/heroImage-3000x2000.avif');
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-image: inherit; // Toma la imagen de fondo de .header
+        z-index: -1; // Asegura que esté detrás del contenido
+
+        @supports(background-image: url('../img/IMG_WEBP/1.PaginaInicio/1.ImagenHeroe/heroImage-3000X3000.webp')) {
+            background-image: url('../img/IMG_WEBP/1.PaginaInicio/1.ImagenHeroe/heroImage-3000X3000.webp');
+        }
+    }
+    
 
     h1{
         font-family: 'Merriweather', sans-serif;
