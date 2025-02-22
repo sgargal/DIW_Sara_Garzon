@@ -39,13 +39,11 @@
     
 
     h1{
-        font-family: 'Merriweather', sans-serif;
+        @include fuentes('Merriweather', 4rem, 1.2, uppercase);
         position: absolute;
         top: 30%;
         left: 5%;
-        font-size: 4rem;
         margin: 0;
-        text-transform: uppercase;
         letter-spacing:0.1rem;
 
         span{

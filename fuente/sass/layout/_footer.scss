@@ -17,8 +17,7 @@
         text-align: center;
 
         p{
-            font-family: 'Merriweather', 'sans-serif';
-            font-size: 1rem;
+            @include fuentes('Merriweather', 1rem, 1.5, uppercase);
             margin: 5px 0;
             color: white;
             text-decoration: underline;
