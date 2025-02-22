@@ -48,3 +48,30 @@
         }
     }
 }
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; // Cambiar de fila a columna
+        align-items: center; // Centrar los elementos
+        padding: 15px; // Reducir el padding
+        gap: 20px; // Espacio entre los elementos
+    }
+
+    .texto-footer {
+        align-items: center; // Centrar el texto en pantallas pequeñas
+        text-align: center; // Centrar el texto
+    }
+
+    .redesSociales {
+        justify-content: center; // Centrar las redes sociales
+        gap: 10px; // Reducir el espacio entre los iconos
+    }
+
+    .redesSociales img {
+        width: 35px; // Reducir el tamaño de los iconos
+        height: 35px; // Reducir el tamaño de los iconos
+    }
+
+    .texto-footer p {
+        font-size: 1rem; // Ajustar el tamaño del texto
+    }
+}

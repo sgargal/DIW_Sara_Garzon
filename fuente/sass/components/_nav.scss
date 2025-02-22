@@ -1,5 +1,6 @@
 @use '../utils/variables' as *;
 @use '../utils/mixins' as *;
+@use '../../sass/mediaQueries' as *;
 
 nav{
     position: absolute;
@@ -36,4 +37,49 @@ nav{
             }
         }
     }
+    // Media Query para pantallas medianas (tablets)
+  @media (max-width: 768px) {
+    top: 0.5rem;
+    right: 0.5rem;
+    margin-top: 1rem;
+
+    .nav-links {
+      flex-direction: row;  // Cambiar de fila a columna
+      gap: 1rem;  // Espaciado mayor entre los elementos
+      justify-content: center;  // Centrado de los items
+    }
+
+    .nav-links li {
+      &:hover {
+        transform: scale(1.05);  // Reduce el tamaño de la escala en hover para pantallas medianas
+      }
+    }
+  }
+
+  
+
+  // Media Query para pantallas pequeñas (móviles)
+  @media (max-width: 480px) {
+    top: 0.5rem;
+    right: 0.5rem;
+    left: 0.5rem;
+    margin-top: 1rem;
+
+    .nav-links {
+      flex-direction: row;  // También en móviles la navegación será vertical
+      gap: 0.8rem;
+      justify-content: center;
+    }
+
+    .nav-links li {
+      &:hover {
+        transform: scale(1.05);  // Reduce el tamaño de la escala en hover para pantallas pequeñas
+      }
+
+      a {
+        font-size: 1rem;  // Reducir tamaño de fuente en móviles
+      }
+    }
+  }
 }
+

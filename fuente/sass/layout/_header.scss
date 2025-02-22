@@ -1,5 +1,6 @@
 @use '../utils/variables' as *;
 @use '../utils/mixins' as *;
+@use '../../sass/mediaQueries' as *;
 
 .header{
     position: relative;
@@ -55,5 +56,34 @@
         }
         
     }
+
+        // Media query tablet
+        @media (max-width: 768px) {
+            height: 400px; // Reducir la altura del header en pantallas pequeñas
+    
+            h1 {
+                font-size: 2.5rem; // Reducir el tamaño de la fuente
+                top: 40%; // Ajustar la posición del título
+                letter-spacing: 0.05rem; // Reducir el espaciado entre letras
+                width: 90%; // Asegurarse de que el título no sobresalga
+    
+                span:nth-child(2) {
+                    left: 0; // Alinear el segundo span con el primero en pantallas pequeñas
+                    font-size: 2.5rem; // Reducir tamaño del segundo span
+                }
+            }
+        }
+    
+        // Media query para móviles
+        @media (max-width: 480px) {
+            height: 350px; // Reducir aún más la altura en pantallas pequeñas
+    
+            h1 {
+                font-size: 2rem; // Reducir aún más el tamaño de la fuente
+                top: 45%; // Ajustar la posición
+                left: 5%; // Ajustar el margen izquierdo
+                letter-spacing: 0.03rem; // Reducir aún más el espaciado de las letras
+            }
+        }
     
 }

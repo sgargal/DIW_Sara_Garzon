@@ -116,4 +116,55 @@
         background-color: $verde;
         border: $verde;
     }
+
+        // Media query para pantallas pequeñas (móviles)
+        @media (max-width: 768px) {
+            .galeria {
+                padding: 0.5rem;
+                margin: 0; // Asegura que no haya márgenes adicionales
+        
+                .imagen-oculta {
+                    height: 250px; // Ajusta la altura según tus necesidades
+                    margin: 0; // Elimina el margen
+                    padding: 0; // Elimina el relleno
+                }
+        
+                img {
+                    margin: 0;
+                    padding: 0;
+                    display: block; // Asegura que no haya espacio debajo de las imágenes
+                    width: 100%; // Asegura que las imágenes ocupen todo el contenedor
+                    height: 100%;
+                    object-fit: cover; // Asegura que las imágenes se ajusten sin dejar espacio
+                }
+            }
+        }
+        // Media query para pantallas muy pequeñas (móviles pequeños)
+        @media (max-width: 480px) {
+            padding: 0.5rem;
+    
+            h3 {
+                font-size: 1.4rem;
+                margin-top: 0.3rem;
+                margin-bottom: 0.6rem;
+            }
+    
+            p {
+                font-size: 0.9rem;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+            }
+    
+            .galeria {
+                .imagen-oculta {
+                    height: 200px; // Reducir aún más la altura de las imágenes
+                }
+            }
+    
+            .map {
+                iframe {
+                    height: 250px; // Ajustar altura del iframe en pantallas muy pequeñas
+                }
+            }
+        }
 }
