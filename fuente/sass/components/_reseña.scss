@@ -7,7 +7,7 @@
     padding: 20px;
 
     img{
-        max-width: 50%;
+        max-width: 100%;
         height: auto;
         object-fit: cover;
         border-radius: 10px;
@@ -46,7 +46,7 @@
 
                 &:hover{
                     transform: scale(1.1);
-                    color: yellow;
+                    color: $verde;
                 }
             }
         }

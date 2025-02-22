@@ -185,7 +185,26 @@
         </section>
         <hr class="lineaHorizontal"> 
         <section class="reseña">
-            <img src="fuente/img/IMG_AVIF/1.PaginaInicio/3.ImagenReseña/reseña-1024x683px.avif">
+            <picture>
+                <!--FORMATO AVIF-->
+                <source srcset="fuente/img/IMG_AVIF/1.PaginaInicio/3.ImagenReseña/reseña-1024x683px.avif 1024w,
+                                fuente/img/IMG_AVIF/1.PaginaInicio/3.ImagenReseña/reseña-1600x1067px.avif 1600w,
+                                fuente/img/IMG_AVIF/1.PaginaInicio/3.ImagenReseña/reseña-2304x1536px.avif 2304w"
+                        type="image/avif">
+                <!--FORMATO WEBP-->
+                <source srcset="fuente/img/IMG_WEBP/1.PaginaInicio/3.ImagenReseña/reseña-1024x683px.webp 1024w,
+                                fuente/img/IMG_WEBP/1.PaginaInicio/3.ImagenReseña/reseña-1600x1067px.webp 1600w,
+                                fuente/img/IMG_WEBP/1.PaginaInicio/3.ImagenReseña/reseña-2304x1536px.webp 2304w"
+                        type="image/webp">
+                <!--IMAGEN DE RESPALDO JPG-->
+                <img src="fuente/img/IMG_PNG/1.PaginaInicio/3.ImagenReseña/reseña-1024x683px.jpg"
+                    sizes="(max-width: 480px) 480px, 
+                          (max-width: 768px) 768px, 
+                          (max-width: 1200px) 1200px, 
+                          (max-width: 1920px) 1920px, 
+                          2560px">
+
+            </picture>
             <span class="textoConEstrellas">
                 <p>“Un lugar encantador para los amantes del buen café.
                     Ambiente acogedor, atención excelente y una selección

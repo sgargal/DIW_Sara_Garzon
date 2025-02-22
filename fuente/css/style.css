@@ -209,7 +209,7 @@ body {
   cursor: pointer;
 }
 .footer .texto-footer p:hover {
-  color: #D69F4D;
+  color: #a7c796;
 }
 .footer .texto-footer p:first-child {
   font-size: 1.2rem;
@@ -234,7 +234,7 @@ body {
   padding: 20px;
 }
 .reseña img {
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 10px;
@@ -271,7 +271,7 @@ body {
 }
 .reseña .textoConEstrellas .estrellas i:hover {
   transform: scale(1.1);
-  color: yellow;
+  color: #a7c796;
 }
 
 nav {
