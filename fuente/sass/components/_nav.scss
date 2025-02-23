@@ -37,21 +37,23 @@ nav{
             }
         }
     }
-    // Media Query para pantallas medianas (tablets)
+
+    
+// Media Query para pantallas medianas (tablets)
   @media (max-width: 768px) {
     top: 0.5rem;
     right: 0.5rem;
     margin-top: 1rem;
 
     .nav-links {
-      flex-direction: row;  // Cambiar de fila a columna
-      gap: 1rem;  // Espaciado mayor entre los elementos
-      justify-content: center;  // Centrado de los items
+      flex-direction: row;  
+      gap: 1rem;  
+      justify-content: center;  
     }
 
     .nav-links li {
       &:hover {
-        transform: scale(1.05);  // Reduce el tamaño de la escala en hover para pantallas medianas
+        transform: scale(1.05);
       }
     }
   }
@@ -66,18 +68,18 @@ nav{
     margin-top: 1rem;
 
     .nav-links {
-      flex-direction: row;  // También en móviles la navegación será vertical
+      flex-direction: row;  //  la navegación será vertical
       gap: 0.8rem;
       justify-content: center;
     }
 
     .nav-links li {
       &:hover {
-        transform: scale(1.05);  // Reduce el tamaño de la escala en hover para pantallas pequeñas
+        transform: scale(1.05); 
       }
 
       a {
-        font-size: 1rem;  // Reducir tamaño de fuente en móviles
+        font-size: 1rem; 
       }
     }
   }
