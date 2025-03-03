@@ -34,6 +34,9 @@
         }
 
         .estrellas{
+            list-style: none;
+            padding: 0;
+            margin: 0;
             display: flex;
             gap: 5px;
             margin-top: 10px;

@@ -3,7 +3,6 @@
 @use '../../sass/mediaQueries' as *;
 
 .header{
-    position: relative;
     background-size: cover;
     background-position: center;
     height: 600px;
@@ -23,7 +22,6 @@
 
     &::before{
         content: "";
-        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
@@ -63,7 +61,7 @@
     
             h1 {
                 font-size: 2.5rem; // Reducir el tamaño de la fuente
-                top: 40%; // Ajustar la posición del título
+                top: 30%; // Ajustar la posición del título
                 letter-spacing: 0.05rem; // Reducir el espaciado entre letras
                 width: 90%; // Asegurarse de que el título no sobresalga
     
