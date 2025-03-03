@@ -1,6 +1,19 @@
+@use "sass:map";
+
 @use '../utils/variables' as *;
 @use '../utils/mixins' as *;
 
+// Definimos las fuentes
+$fuentes: (
+  titulo: 'Merriweather',
+  texto: 'QuickSand'
+);
+
+// Definimos los colores
+$colores: (
+  verde: $verde,  // $verde viene de variables.scss
+  negro: black
+);
 
 .main{
     padding: 2rem;
@@ -13,7 +26,7 @@
         justify-content: center;
     }
     h3{
-        @include fuentes('Merriweather', 2rem, 1.5, uppercase);
+        @include fuentes(map.get($fuentes, titulo), 2rem, 1.5, uppercase);
         margin-top: 0.6rem;
         margin-bottom: 1rem;
         letter-spacing:0.1rem;
@@ -26,7 +39,7 @@
         }
     }
     p{
-        @include fuentes('QuickSand', 1.1rem, 1.5);
+        @include fuentes(map.get($fuentes, texto), 1.1rem, 1.5);
         margin-bottom: 1rem;
         text-align: center;
         margin-left: 3rem;
@@ -113,8 +126,8 @@
     .lineaHorizontal{
         width: 100%;
         height: 5px;
-        background-color: $verde;
-        border: $verde;
+        background-color: map.get($colores, verde);
+        border:  map.get($colores, verde);
     }
 
         // Media query para pantallas pequeñas (móviles)
