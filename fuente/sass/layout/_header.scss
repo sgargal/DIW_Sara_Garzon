@@ -2,9 +2,16 @@
 @use '../utils/mixins' as *;
 @use '../../sass/mediaQueries' as *;
 
-.header{
+// Defino un conjunto de reglas base para los fondos
+%background-cover {
     background-size: cover;
     background-position: center;
+    background-image: url('../img/IMG_PNG/1.PaginaInicio/1.ImagenHeroe/heroImage-3000X2000.jpg');
+}
+
+
+.header{
+    @extend %background-cover;
     height: 600px;
     display: flex;
     flex-direction: column;

@@ -191,6 +191,10 @@ body {
 .header {
   background-size: cover;
   background-position: center;
+  background-image: url("../img/IMG_PNG/1.PaginaInicio/1.ImagenHeroe/heroImage-3000X2000.jpg");
+}
+
+.header {
   height: 600px;
   display: flex;
   flex-direction: column;
