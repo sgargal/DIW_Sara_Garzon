@@ -246,22 +246,19 @@ body {
 }
 @media (max-width: 768px) {
   .header {
-    height: 400px;
-  }
-  .header h1 {
-    font-size: 2.5rem;
-    top: 30%;
-    letter-spacing: 0.05rem;
-    width: 90%;
-  }
-  .header h1 span:nth-child(2) {
-    left: 0;
-    font-size: 2.5rem;
+    height: 420px h1;
+    height-font-size: 2.5rem;
+    height-top: 30%;
+    height-letter-spacing: 0.05rem;
+    height-width: 90%;
+    height-span: nth-child(2);
+    height-span-left: 0;
+    height-span-font-size: 2.5rem;
   }
 }
 @media (max-width: 480px) {
   .header {
-    height: 350px;
+    height: 300px;
   }
   .header h1 {
     font-size: 2rem;

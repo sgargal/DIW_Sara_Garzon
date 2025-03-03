@@ -64,7 +64,7 @@
 
         // Media query tablet
         @media (max-width: 768px) {
-            height: 400px; // Reducir la altura del header en pantallas pequeñas
+            height: 400px + 20px // Reducir la altura del header en pantallas pequeñas
     
             h1 {
                 font-size: 2.5rem; // Reducir el tamaño de la fuente
@@ -81,7 +81,7 @@
     
         // Media query para móviles
         @media (max-width: 480px) {
-            height: 350px; // Reducir aún más la altura en pantallas pequeñas
+            height: 350px - 50px;// Reducir aún más la altura en pantallas pequeñas
     
             h1 {
                 font-size: 2rem; // Reducir aún más el tamaño de la fuente
