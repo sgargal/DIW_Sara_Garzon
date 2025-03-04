@@ -175,6 +175,74 @@ body {
   }
 }
 
+.carta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+.carta picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 350px;
+}
+.carta img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+.carta img:hover {
+  transform: scale(1.05);
+}
+.carta p {
+  font-family: "Nunito";
+  font-size: 1.3rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #7b5836;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .carta {
+    gap: 1.5rem;
+  }
+  .carta picture {
+    width: 250px;
+  }
+  .carta img {
+    height: 220px;
+  }
+  .carta p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 480px) {
+  .carta {
+    flex-direction: column;
+    align-items: center;
+  }
+  .carta picture {
+    width: 100%;
+    max-width: 300px;
+  }
+  .carta img {
+    height: 200px;
+  }
+  .carta p {
+    font-size: 1.1rem;
+  }
+}
+
 @media (max-width: 768px) {
   .reseña {
     flex-direction: column;
@@ -268,6 +336,58 @@ body {
   }
 }
 
+.header-other {
+  height: 150px;
+  background-color: #7b5836;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  box-shadow: #5f5f5f 0px 0px 10px 0px;
+}
+.header-other h1 {
+  font-family: "Merriweather";
+  font-size: 2.5rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  margin: 0;
+  letter-spacing: 0.1rem;
+  color: #fff;
+}
+.header-other h1 span {
+  display: block;
+}
+.header-other h1 span:nth-child(2) {
+  position: relative;
+  left: 5rem;
+}
+.header-other h1 span a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .header-other {
+    height: 180px;
+  }
+  .header-other h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .header-other {
+    height: 150px;
+  }
+  .header-other h1 {
+    font-size: 2rem;
+  }
+}
 .footer {
   position: relative;
   bottom: 0;
@@ -466,6 +586,75 @@ nav .nav-links li a:hover {
     transform: scale(1.05);
   }
   nav .nav-links li a {
+    font-size: 1rem;
+  }
+}
+
+nav {
+  position: absolute;
+  top: -0.15em;
+  right: 3rem;
+  margin-top: 2rem;
+}
+nav .nav-links-other {
+  font-family: "Nunito";
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+nav .nav-links-other li {
+  transition: transform 0.5s ease-in-out;
+}
+nav .nav-links-other li:hover {
+  transform: scale(1.1);
+}
+nav .nav-links-other li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: color 0.3s ease-in-out;
+}
+nav .nav-links-other li a:hover {
+  color: #D69F4D;
+}
+@media (max-width: 768px) {
+  nav {
+    right: 2rem;
+    top: 0.5rem;
+    margin-top: 1rem;
+  }
+  nav .nav-links-other {
+    flex-direction: row;
+    gap: 1.2rem;
+    justify-content: center;
+  }
+  nav .nav-links-other li:hover {
+    transform: scale(1.05);
+  }
+}
+@media (max-width: 480px) {
+  nav {
+    right: 1rem;
+    left: 1rem;
+    top: 0.5rem;
+    margin-top: 1rem;
+  }
+  nav .nav-links-other {
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+  }
+  nav .nav-links-other li:hover {
+    transform: scale(1.05);
+  }
+  nav .nav-links-other li a {
     font-size: 1rem;
   }
 }

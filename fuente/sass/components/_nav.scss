@@ -85,3 +85,84 @@ nav{
   }
 }
 
+nav {
+  position: absolute;
+  top: -0.15em;
+  right: 3rem; // Movido un poco más a la izquierda para mejor equilibrio
+  margin-top: 2rem;
+
+  .nav-links-other {
+      @include fuentes('Nunito', 1.2rem, 1.5, uppercase);
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 1.5rem; // Más espacio entre elementos para que no se vean tan juntos
+
+      li {
+          transition: transform 0.5s ease-in-out;
+
+          &:hover {
+              transform: scale(1.1);
+          }
+
+          a {
+              color: $blanco;
+              text-decoration: none;
+              font-weight: bold;
+              font-size: 1.2rem;
+              text-transform: uppercase;
+              letter-spacing: 0.1em;
+              transition: color 0.3s ease-in-out;
+
+              &:hover {
+                  color: $dorado;
+              }
+          }
+      }
+  }
+
+  // Media Query para tablets
+  @media (max-width: 768px) {
+      right: 2rem; // Más ajustado para tablets
+      top: 0.5rem;
+      margin-top: 1rem;
+
+      .nav-links-other {
+          flex-direction: row;
+          gap: 1.2rem;
+          justify-content: center;
+      }
+
+      .nav-links-other li {
+          &:hover {
+              transform: scale(1.05);
+          }
+      }
+  }
+
+  // Media Query para móviles
+  @media (max-width: 480px) {
+      right: 1rem; // Más centrado en móviles
+      left: 1rem;
+      top: 0.5rem;
+      margin-top: 1rem;
+
+      .nav-links-other {
+          flex-direction: row;
+          gap: 1rem;
+          justify-content: center;
+      }
+
+      .nav-links-other li {
+          &:hover {
+              transform: scale(1.05);
+          }
+
+          a {
+              font-size: 1rem;
+          }
+      }
+  }
+}
+
+

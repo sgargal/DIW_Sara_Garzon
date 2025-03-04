@@ -130,7 +130,7 @@ $colores: (
         border:  map.get($colores, verde);
     }
 
-        // Media query para pantallas pequeñas (móviles)
+        // Media query para tablet
         @media (max-width: 768px) {
             .galeria {
                 padding: 0.5rem;
@@ -181,3 +181,78 @@ $colores: (
             }
         }
 }
+
+.carta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; // Espacio entre elementos
+    flex-wrap: wrap; // Permite ajuste en pantallas pequeñas
+    padding: 2rem;
+
+    picture {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 350px;
+    }
+
+    img {
+        width: 100%; 
+        height: 300px; // Mantiene una altura fija para uniformidad
+        object-fit: cover; // Recorta la imagen para mantener proporción
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.05); // Efecto de agrandamiento al pasar el ratón
+        }
+    }
+
+    p {
+        @include fuentes('Nunito', 1.3rem, 1.5, uppercase);
+        margin-top: 0.5rem;
+        font-weight: bold;
+        color: $marron;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    // Media Query para tablets
+    @media (max-width: 768px) {
+        gap: 1.5rem;
+        picture {
+            width: 250px;
+        }
+
+        img {
+            height: 220px;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
+
+    // Media Query para móviles
+    @media (max-width: 480px) {
+        flex-direction: column; // Se apilan en móviles
+        align-items: center;
+
+        picture {
+            width: 100%;
+            max-width: 300px;
+        }
+
+        img {
+            height: 200px;
+        }
+
+        p {
+            font-size: 1.1rem;
+        }
+    }
+}
+
