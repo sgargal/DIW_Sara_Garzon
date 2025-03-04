@@ -256,3 +256,195 @@ $colores: (
     }
 }
 
+.formulario {
+    @include fuentes('QuickSand', 1rem, 1.5, uppercase);
+    max-width: 50%; // Reduce el ancho para un mejor centrado
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center; // Centra los elementos dentro
+
+    h2 {
+        text-align: center; // Centra el título
+        font-size: 1.5rem;
+        color: $marron;
+        margin-bottom: 15px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center; // Centra los elementos dentro del formulario
+        width: 100%;
+    }
+
+    label {
+        font-weight: bold;
+        color: #5a3e1b;
+        margin-top: 10px;
+        text-align: left;
+        width: 80%;
+    }
+
+    input, select, textarea {
+        width: 80%; // Ajusta el ancho y usa margen automático para centrar
+        padding: 10px;
+        margin: 5px auto;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: $verde;
+        display: block;
+    }
+
+    textarea {
+        height: 100px;
+    }
+
+    select {
+        width: 80%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: $verde;
+        color: #5a3e1b;
+        font-size: 1rem;
+        appearance: none; 
+        cursor: pointer;
+    
+        &:focus {
+            outline: none;
+            border-color: $dorado;
+        }
+    }
+    
+    option {
+        background-color: white; 
+        color: black; 
+        padding: 10px;
+        font-size: 1rem;
+        
+        &:hover {
+            background-color: $dorado; 
+            color: white;
+        }
+    }
+    
+    button {
+        margin-top: 20px;
+        background-color: $dorado;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        width: 50%;
+        align-self: center; // Centra el botón
+    }
+
+    button:hover {
+        background-color: #825c33;
+    }
+}
+
+.cafes {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: $verde;
+    padding: 20px;
+    border-radius: 10px;
+    
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            @include fuentes('Nunito', 1rem, 1.5, uppercase);
+            font-weight: bold;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+            cursor: pointer;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: $dorado;
+            }
+        }
+    }
+}
+
+
+.productos {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.producto {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    picture {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 50%;
+            height: auto;
+            border-radius: 10px;
+        }
+    }
+}
+
+.producto-info {
+    margin-top: 10px;
+
+    h3 {
+        @include fuentes('QuickSand', 1.3rem, 1.5, uppercase);
+        color: #5a3e1b;
+    }
+
+    p {
+        @include fuentes('Nunito', 0.9rem, 1.5, uppercase);
+        color: #333;
+        margin: 5px 0;
+    }
+
+    .fa-cart-shopping {
+        font-size: 1.5rem;
+        color: $marron;
+        cursor: pointer;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $dorado;
+        }
+    }
+}
+
+
+
