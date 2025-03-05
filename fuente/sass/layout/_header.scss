@@ -6,7 +6,7 @@
 %background-cover {
     background-size: cover;
     background-position: center;
-    background-image: url('../img/IMG_PNG/1.PaginaInicio/1.ImagenHeroe/heroImage-3000X2000.jpg');
+    background-image: url('../../img/IMG_PNG/1.PaginaInicio/1.ImagenHeroe/heroImage-1024x683px.jpg');
 }
 
 
@@ -21,10 +21,10 @@
     text-align: center;
     @include box-shadow(#5f5f5f, 0px, 0px, 10px, 0px);
 
-    background-image: url('../img/IMG_PNG/1.PaginaInicio/1.ImagenHeroe/heroImage-3000X2000.jpg');
+    background-image: url('../img/IMG_PNG/1.PaginaInicio/1.ImagenHeroe/heroImage-1024x683px.jpg');
 
-    @supports(background-image: url('../img/IMG_AVIF/1.PaginaInicio/1.ImagenHeroe/heroImage-3000x2000.avif')){
-        background-image: url('../img/IMG_AVIF/1.PaginaInicio/1.ImagenHeroe/heroImage-3000x2000.avif');
+    @supports(background-image: url('../img/IMG_AVIF/1.PaginaInicio/1.ImagenHeroe/heroImage-1024x683.avif')){
+        background-image: url('../img/IMG_AVIF/1.PaginaInicio/1.ImagenHeroe/heroImage-1024x683.avif');
     }
 
     &::before{
@@ -38,8 +38,8 @@
         background-image: inherit; // Toma la imagen de fondo de .header
         z-index: -1; // Asegura que esté detrás del contenido
 
-        @supports(background-image: url('../img/IMG_WEBP/1.PaginaInicio/1.ImagenHeroe/heroImage-3000X2000.webp')) {
-            background-image: url('../img/IMG_WEBP/1.PaginaInicio/1.ImagenHeroe/heroImage-3000X2000.webp');
+        @supports(background-image: url('../img/IMG_WEBP/1.PaginaInicio/1.ImagenHeroe/heroImage-1024x683.webp')) {
+            background-image: url('../img/IMG_WEBP/1.PaginaInicio/1.ImagenHeroe/heroImage-1024x683.webp');
         }
     }
 
@@ -52,10 +52,10 @@
         margin: 0;
         letter-spacing:0.1rem;
 
-        span{
+        strong{
             display: block;
         }    
-        span:nth-child(2){
+        strong:nth-child(2){
             position: relative;
             left: 5rem;
         }
