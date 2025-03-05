@@ -439,17 +439,12 @@ body {
 .header {
   background-size: cover;
   background-position: center;
-  background-image: url("../../img/IMG_PNG/1.PaginaInicio/1.ImagenHeroe/heroImage-1024x683px.jpg");
+  background-image: url("../img/IMG_PNG/1.PaginaInicio/1.ImagenHeroe/heroImage-1024x683px.jpg");
 }
 
 .header {
   height: 600px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   color: #fff;
-  text-align: center;
   box-shadow: #5f5f5f 0px 0px 10px 0px;
   background-image: url("../img/IMG_PNG/1.PaginaInicio/1.ImagenHeroe/heroImage-1024x683px.jpg");
 }
@@ -472,6 +467,36 @@ body {
 @supports (background-image: url("../img/IMG_WEBP/1.PaginaInicio/1.ImagenHeroe/heroImage-1024x683.webp")) {
   .header::before {
     background-image: url("../img/IMG_WEBP/1.PaginaInicio/1.ImagenHeroe/heroImage-1024x683.webp");
+  }
+}
+@media (min-width: 1024px) {
+  .header {
+    background-image: url("..img/IMG_PNG/1. PaginaInicio/1.ImagenHeroe/heroImage-1600x1067px.jpg");
+  }
+  @supports (background-image: url("../img/IMG_AVIF/1.PaginaInicio/1.ImagenHeroe/heroImage-1600x1067.avif")) {
+    .header {
+      background-image: url("../img/IMG_AVIF/1.PaginaInicio/1.ImagenHeroe/heroImage-1600x1067.avif");
+    }
+  }
+  @supports (background-image: url("../img/IMG_WEBP/1.PaginaInicio/1.ImagenHeroe/heroImage-1600x1067.webp")) {
+    .header {
+      background-image: url("../img/IMG_WEBP/1.PaginaInicio/1.ImagenHeroe/heroImage-1600x1067.webp");
+    }
+  }
+}
+@media (min-width: 2000px) {
+  .header {
+    background-image: url("../img/IMG_PNG/1.PaginaInicio/1.ImagenHeroe/heroImage-3000x2000.jpg");
+  }
+  @supports (background-image: url("../img/IMG_AVIF/1.PaginaInicio/1.ImagenHeroe/heroImage-3000x2000.avif")) {
+    .header {
+      background-image: url("../img/IMG_AVIF/1.PaginaInicio/1.ImagenHeroe/heroImage-3000x2000.avif");
+    }
+  }
+  @supports (background-image: url("../img/IMG_WEBP/1.PaginaInicio/1.ImagenHeroe/heroImage-3000x2000.webp")) {
+    .header {
+      background-image: url("../img/IMG_WEBP/1.PaginaInicio/1.ImagenHeroe/heroImage-3000x2000.webp");
+    }
   }
 }
 .header h1 {
@@ -540,14 +565,14 @@ body {
   letter-spacing: 0.1rem;
   color: #fff;
 }
-.header-other h1 span {
+.header-other h1 strong {
   display: block;
 }
-.header-other h1 span:nth-child(2) {
+.header-other h1 strong:nth-child(2) {
   position: relative;
   left: 5rem;
 }
-.header-other h1 span a {
+.header-other h1 strong a {
   text-decoration: none;
   color: #fff;
 }
