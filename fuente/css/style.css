@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import '../css/@fortawesome/fontawesome-free/css/all.min.css';
 @font-face {
   font-family: "Merriweather";
   src: url("../fonts/Merriweather/Merriweather-Regular.ttf") format("truetype");
