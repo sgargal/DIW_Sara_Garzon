@@ -14,6 +14,7 @@
     @extend %background-cover;
     height: 600px;
     color: $blanco;
+    position: relative;
     @include box-shadow(#5f5f5f, 0px, 0px, 10px, 0px);
 
     background-image: url('../img/IMG_PNG/1.PaginaInicio/1.ImagenHeroe/heroImage-1024x683px.jpg');
@@ -84,17 +85,17 @@
 
         // Media query tablet
         @media (max-width: 768px) {
-            height: 400px + 20px // Reducir la altura del header en pantallas pequeñas
+            height: 400px + 20px 
     
             h1 {
-                font-size: 2.5rem; // Reducir el tamaño de la fuente
-                top: 30%; // Ajustar la posición del título
-                letter-spacing: 0.05rem; // Reducir el espaciado entre letras
-                width: 90%; // Asegurarse de que el título no sobresalga
+                font-size: 2.5rem; 
+                top: 30%; 
+                letter-spacing: 0.05rem; 
+                width: 90%; 
     
-                span:nth-child(2) {
-                    left: 0; // Alinear el segundo span con el primero en pantallas pequeñas
-                    font-size: 2.5rem; // Reducir tamaño del segundo span
+                strong:nth-child(2) {
+                    left: 0; 
+                    font-size: 2.5rem; 
                 }
             }
         }
@@ -117,7 +118,7 @@
     height: 150px;
     background-color: $marron;
     color: $blanco;
-    position: relative; // Necesario para posicionar elementos hijos con absolute
+    position: relative;
     @include box-shadow(#5f5f5f, 0px, 0px, 10px, 0px);
 
     h1 {

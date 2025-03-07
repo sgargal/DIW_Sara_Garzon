@@ -502,6 +502,7 @@ body {
 .header {
   height: 600px;
   color: #fff;
+  position: relative;
   box-shadow: #5f5f5f 0px 0px 10px 0px;
   background-image: url("../img/IMG_PNG/1.PaginaInicio/1.ImagenHeroe/heroImage-1024x683px.jpg");
 }
@@ -581,9 +582,9 @@ body {
     height-top: 30%;
     height-letter-spacing: 0.05rem;
     height-width: 90%;
-    height-span: nth-child(2);
-    height-span-left: 0;
-    height-span-font-size: 2.5rem;
+    height-strong: nth-child(2);
+    height-strong-left: 0;
+    height-strong-font-size: 2.5rem;
   }
 }
 @media (max-width: 480px) {
@@ -652,7 +653,7 @@ body {
     font-size: 1rem; /* Reduce el tamaño para que no se superponga */
     position: static; /* Elimina la posición absoluta para evitar solapamientos */
     transform: none; /* Elimina la transformación innecesaria */
-    width: 100%; /* Asegura que el título ocupe todo el espacio */
+    width: 100%;
   }
   .header-other strong:nth-child(2) {
     left: 0; /* Evita desplazamientos extra */
