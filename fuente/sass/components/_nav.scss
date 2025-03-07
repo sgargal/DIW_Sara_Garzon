@@ -120,49 +120,6 @@ nav {
           }
       }
   }
-
-  // Media Query para tablets
-  @media (max-width: 768px) {
-      right: 2rem; // Más ajustado para tablets
-      top: 0.5rem;
-      margin-top: 1rem;
-
-      .nav-links-other {
-          flex-direction: row;
-          gap: 1.2rem;
-          justify-content: center;
-      }
-
-      .nav-links-other li {
-          &:hover {
-              transform: scale(1.05);
-          }
-      }
-  }
-
-  // Media Query para móviles
-  @media (max-width: 480px) {
-      right: 1rem; // Más centrado en móviles
-      left: 1rem;
-      top: 0.5rem;
-      margin-top: 1rem;
-
-      .nav-links-other {
-          flex-direction: row;
-          gap: 1rem;
-          justify-content: center;
-      }
-
-      .nav-links-other li {
-          &:hover {
-              transform: scale(1.05);
-          }
-
-          a {
-              font-size: 1rem;
-          }
-      }
-  }
 }
 
 

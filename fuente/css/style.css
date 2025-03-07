@@ -630,36 +630,45 @@ body {
   text-decoration: none;
   color: #fff;
 }
-
 @media (max-width: 768px) {
-  .header-other {
-    height: 180px;
-  }
-  .header-other h1 {
-    font-size: 2.5rem;
-  }
-}
-@media (max-width: 400px) {
-  .header-other {
-    height: auto; /* Ajusta la altura según el contenido */
-    padding: 20px 10px; /* Añade espacio alrededor del texto */
+  .header-other .header-other {
+    height: 120px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    text-align: center;
+    justify-content: space-between;
+    padding: 0 1rem;
   }
   .header-other h1 {
-    font-size: 1rem; /* Reduce el tamaño para que no se superponga */
-    position: static; /* Elimina la posición absoluta para evitar solapamientos */
-    transform: none; /* Elimina la transformación innecesaria */
-    width: 100%;
+    font-size: 2rem;
+    gap: 0.3rem;
+    margin-top: 5%;
+    left: 5%;
   }
-  .header-other strong:nth-child(2) {
-    left: 0; /* Evita desplazamientos extra */
-    position: static; /* Corrige la posición */
+  .header-other nav {
+    width: auto;
+    margin-top: 1rem;
+    margin-left: 10%;
+  }
+  .header-other .nav-links-other {
+    flex-direction: row;
+    gap: 0.8rem;
+    justify-content: center;
   }
 }
+@media (max-width: 480px) {
+  .header-other .header-other {
+    height: 100px;
+  }
+  .header-other h1 {
+    font-size: 1.8rem;
+  }
+  .header-other .nav-links-other {
+    font-size: 1rem;
+    gap: 0.8rem;
+  }
+}
+
 .footer {
   position: relative;
   bottom: 0;
@@ -895,40 +904,6 @@ nav .nav-links-other li a {
 }
 nav .nav-links-other li a:hover {
   color: #D69F4D;
-}
-@media (max-width: 768px) {
-  nav {
-    right: 2rem;
-    top: 0.5rem;
-    margin-top: 1rem;
-  }
-  nav .nav-links-other {
-    flex-direction: row;
-    gap: 1.2rem;
-    justify-content: center;
-  }
-  nav .nav-links-other li:hover {
-    transform: scale(1.05);
-  }
-}
-@media (max-width: 480px) {
-  nav {
-    right: 1rem;
-    left: 1rem;
-    top: 0.5rem;
-    margin-top: 1rem;
-  }
-  nav .nav-links-other {
-    flex-direction: row;
-    gap: 1rem;
-    justify-content: center;
-  }
-  nav .nav-links-other li:hover {
-    transform: scale(1.05);
-  }
-  nav .nav-links-other li a {
-    font-size: 1rem;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

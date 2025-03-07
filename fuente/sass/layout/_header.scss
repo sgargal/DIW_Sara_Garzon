@@ -133,7 +133,6 @@
 
         strong {
             display: block;
-
         }
 
         strong:nth-child(2) {
@@ -146,42 +145,52 @@
             color: $blanco;
         }
     }
-}
 
-// Media query para tablet
-@media (max-width: 768px) {
-    .header-other {
-        height: 180px;
-
+    @media (max-width: 768px) {
+        .header-other {
+            height: 120px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1rem;
+        }
         h1 {
-            font-size: 2.5rem;
+            font-size: 2rem;
+            gap: 0.3rem;
+            margin-top: 5%;
+            left: 5%;
+        }
+        nav {
+            width: auto;
+            margin-top: 1rem;
+            margin-left: 10%;
+        }
+        .nav-links-other {
+            flex-direction: row;  //  la navegación será vertical
+            gap: 0.8rem;
+            justify-content: center;
         }
     }
+    
+    @media (max-width: 480px) {
+        .header-other {
+            height: 100px; // Más compacto en móviles pequeños
+
+        }
+
+        h1 {
+            font-size: 1.8rem;
+        }
+    
+        .nav-links-other {
+            font-size: 1rem;
+            gap: 0.8rem;
+        }
+    }
+    
 }
 
-@media (max-width: 400px) {
-    .header-other {
-        height: auto; /* Ajusta la altura según el contenido */
-        padding: 20px 10px; /* Añade espacio alrededor del texto */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .header-other h1 {
-        font-size: 1rem; /* Reduce el tamaño para que no se superponga */
-        position: static; /* Elimina la posición absoluta para evitar solapamientos */
-        transform: none; /* Elimina la transformación innecesaria */
-        width: 100%;
-    }
-
-    .header-other strong:nth-child(2) {
-        left: 0; /* Evita desplazamientos extra */
-        position: static; /* Corrige la posición */
-    }
-}
 
 
 
