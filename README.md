@@ -17,7 +17,9 @@ Este proyecto utiliza las siguientes tecnologías:
 
 1 - Instala las dependencias utilizando npm :
 `` npm install ``
+
 2 - Inicia el servidor de desarrollo:
 `` npm run dev ``
+
 3 - Si quieres construir el proyecto:
 `` npm run build ``
