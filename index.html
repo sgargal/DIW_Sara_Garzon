@@ -39,8 +39,14 @@
             <!-- Imágenes con formatos adaptativos (AVIF, WebP y JPG)-->
             <picture class="imagen-oculta">
                 <!-- Formato AVIF -->
-                <source srcset="fuente/img/IMG_AVIF/1.PaginaInicio/2.ImagenesGaleria/cafetera/cafetera-720x480.avif 720w
+                <source srcset="fuente/img/IMG_AVIF/1.PaginaInicio/2.ImagenesGaleria/cafetera/cafetera-450x300.avif 450w,
+                                fuente/img/IMG_AVIF/1.PaginaInicio/2.ImagenesGaleria/cafetera/cafetera-720x480.avif 720w,
                                 fuente/img/IMG_AVIF/1.PaginaInicio/2.ImagenesGaleria/cafetera/cafetera-1024x683px.avif 1024w"
+                        sizes="(max-width: 480px) 100vw, 
+                        (max-width: 768px) 50vw, 
+                        (max-width: 1200px) 33vw, 
+                        (max-width: 1920px) 25vw, 
+                        20vw"
                         type="image/avif">
             
                 <!-- Formato WebP -->
@@ -50,11 +56,11 @@
             
                 <!-- Imagen de respaldo JPG -->
                 <img src="fuente/img/IMG_PNG/1. PaginaInicio/2.ImagenesGaleria/cafetera/cafetera-1024x683px.jpg"
-                    sizes="(max-width: 480px) 480px, 
-                          (max-width: 768px) 768px, 
-                          (max-width: 1200px) 1200px, 
-                          (max-width: 1920px) 1920px, 
-                          2560px">
+                    sizes="(max-width: 480px) 100vw, 
+                    (max-width: 768px) 50vw, 
+                    (max-width: 1200px) 33vw, 
+                    (max-width: 1920px) 25vw, 
+                    20vw">
             </picture>
             <picture class="imagen-oculta">
                 <!--FORMATO AVIF-->
@@ -228,13 +234,13 @@
         <!-- ICONOS DE REDES SOCIALES -->
         <section class="redesSociales">
             <a href="https://www.instagram.com" target="_blank">
-                <img src="fuente/img/IMG_AVIF/RedesSociales/logoInstagram/logoInstagram-1024x1024.avif">
+                <img src="fuente/img/IMG_AVIF/RedesSociales/logoInstagram/logoInstagram-450x450.avif">
             </a>
             <a href="https://www.facebook.com" target="_blank">
-                <img src="fuente/img/IMG_AVIF/RedesSociales/logoFcebook/logoFacebook-1024x1024.avif">
+                <img src="fuente/img/IMG_AVIF/RedesSociales/logoFcebook/logoFacebook-450x450.avif">
             </a>
             <a href="https://www.x.com" target="_blank">
-                <img src="fuente/img/IMG_AVIF/RedesSociales/logoX/logoX-1024x1047.avif">
+                <img src="fuente/img/IMG_AVIF/RedesSociales/logoX/logoX-450x450.avif">
             </a>
         </section>
     </footer>
