@@ -69,7 +69,7 @@ Antes:
                 Seleccionamos cuidadosamente cafés de especialidad de fincas sostenibles. Nuestros baristas, expertos en la preparación de café, se encargan de extraer lo mejor de cada grano, resaltando sus sabores y aromas únicos.
                 Te invitamos a ser parte de nuestra historia y a descubrir, en cada sorbo, el cariño, la dedicación y la pasión que nos impulsan. En Aroma Urbano, cada taza es un viaje único.</p>
         </section>
-html```
+```
         
 Después:
 
@@ -79,7 +79,9 @@ Después:
             <p>Aroma Urbano nació del sueño de compartir una pasión: el amor por el buen café. Queríamos crear un espacio donde cada taza cuente una historia, donde el aroma del café recién molido despierte los sentidos y transporte a nuestros visitantes a las tierras de origen de nuestros granos.
                 Seleccionamos cuidadosamente cafés de especialidad de fincas sostenibles. Nuestros baristas, expertos en la preparación de café, se encargan de extraer lo mejor de cada grano, resaltando sus sabores y aromas únicos.
                 Te invitamos a ser parte de nuestra historia y a descubrir, en cada sorbo, el cariño, la dedicación y la pasión que nos impulsan. En Aroma Urbano, cada taza es un viaje único.</p>
-        </section>```
+        </section>
+```
 
-Además también he tenido que cambiar el scss.
+> **Nota:** También tuve que hacer cambios en el SCSS.
+
 
