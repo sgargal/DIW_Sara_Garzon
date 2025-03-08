@@ -38,3 +38,11 @@ Este proyecto utiliza las siguientes tecnologías:
       
   2 - <a href="https://www.accessibilitychecker.org/">Accessibility Checker: </a>
       Revisa el sitio web y genera un informe detallado con advertencias y sugerencias para mejorar la accesibilidad.
+### 3 - Resultados obtenidos
+1 - SkyNet:
+
+<img src="imgAct14/skynet.png">
+
+2 - Accessibility Checker:
+
+<img src="imgAct14/accessibilitychecker.png">
