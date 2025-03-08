@@ -157,3 +157,35 @@ Después:
                     alt="Cafetera sirviendo café en una taza">
             </picture>
 ```
+5 -  Iframes sin title
+El iframe del mapa no tiene un title accesible
+
+Antes: 
+
+```html
+<section class="map">
+            <h2>UBICACIÓN</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1589.4701755926815!2d-3.593211600000043!3d37.177888500000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcb86fcdfbfb%3A0x1abbc3a696d7eea6!2sPuente%20de%20Espinosa%2C%20Granada!5e0!3m2!1ses!2ses!4v1739532922980!5m2!1ses!2ses" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+```
+
+Después:
+
+```html
+<section class="map">
+            <h2>UBICACIÓN</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1589.4701755926815!2d-3.593211600000043!3d37.177888500000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcb86fcdfbfb%3A0x1abbc3a696d7eea6!2sPuente%20de%20Espinosa%2C%20Granada!5e0!3m2!1ses!2ses!4v1739532922980!5m2!1ses!2ses" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Ubicación en Google Maps">
+            </iframe>
+        </section>
+```
+
