@@ -34,4 +34,5 @@ Este proyecto utiliza las siguientes tecnologías:
   Para comprobar la accesibilidad de mi web he usado dos herramientas:
 
   1 - <a href="https://freeaccessibilitychecker.skynettechnologies.com/">SkyNet Technologies</a>
-  2 - Accessibility Checker
+  
+  2 - <a href="https://www.accessibilitychecker.org/">Accessibility Checker</a>
