@@ -84,4 +84,75 @@ Después:
 
 > **Nota:** También tuve que hacer cambios en el SCSS.
 
+3 - Problemas con Imágenes
 
+Hay imágenes sin la propiedad alt. 
+
+Antes:
+```html
+<picture class="imagen-oculta">
+                <!-- Formato AVIF -->
+                <source srcset="img/IMG_AVIF/1.PaginaInicio/2.ImagenesGaleria/cafetera/cafetera-450x300.avif 450w,
+                                img/IMG_AVIF/1.PaginaInicio/2.ImagenesGaleria/cafetera/cafetera-720x480.avif 720w,
+                                img/IMG_AVIF/1.PaginaInicio/2.ImagenesGaleria/cafetera/cafetera-1024x683px.avif 1024w"
+                        sizes="(max-width: 480px) 40vw, 
+                            (max-width: 768px) 50vw, 
+                            (max-width: 1200px) 33vw, 
+                            (max-width: 1920px) 25vw, 
+                            20vw"
+                        type="image/avif">
+            
+                <!-- Formato WebP -->
+                <source srcset="img/IMG_WEBP/1.PaginaInicio/2.ImagenesGaleria/cafetera/cafetera-720x480.webp 720w,
+                                img/IMG_WEBP/1.PaginaInicio/2.ImagenesGaleria/cafetera/cafetera-1024x683px.webp 1024w"
+                        sizes="(max-width: 480px) 40vw, 
+                        (max-width: 768px) 50vw, 
+                        (max-width: 1200px) 33vw, 
+                        (max-width: 1920px) 25vw, 
+                        20vw"
+                        type="image/webp">
+            
+                <!-- Imagen de respaldo JPG -->
+                <img src="img/IMG_PNG/1. PaginaInicio/2.ImagenesGaleria/cafetera/cafetera-1024x683px.jpg"
+                    sizes="(max-width: 480px) 40vw, 
+                    (max-width: 768px) 50vw, 
+                    (max-width: 1200px) 33vw, 
+                    (max-width: 1920px) 25vw, 
+                    20vw">
+            </picture>
+```
+Después:
+
+```html
+<picture class="imagen-oculta">
+                <!-- Formato AVIF -->
+                <source srcset="img/IMG_AVIF/1.PaginaInicio/2.ImagenesGaleria/cafetera/cafetera-450x300.avif 450w,
+                                img/IMG_AVIF/1.PaginaInicio/2.ImagenesGaleria/cafetera/cafetera-720x480.avif 720w,
+                                img/IMG_AVIF/1.PaginaInicio/2.ImagenesGaleria/cafetera/cafetera-1024x683px.avif 1024w"
+                        sizes="(max-width: 480px) 40vw, 
+                            (max-width: 768px) 50vw, 
+                            (max-width: 1200px) 33vw, 
+                            (max-width: 1920px) 25vw, 
+                            20vw"
+                        type="image/avif">
+            
+                <!-- Formato WebP -->
+                <source srcset="img/IMG_WEBP/1.PaginaInicio/2.ImagenesGaleria/cafetera/cafetera-720x480.webp 720w,
+                                img/IMG_WEBP/1.PaginaInicio/2.ImagenesGaleria/cafetera/cafetera-1024x683px.webp 1024w"
+                        sizes="(max-width: 480px) 40vw, 
+                        (max-width: 768px) 50vw, 
+                        (max-width: 1200px) 33vw, 
+                        (max-width: 1920px) 25vw, 
+                        20vw"
+                        type="image/webp">
+            
+                <!-- Imagen de respaldo JPG -->
+                <img src="img/IMG_PNG/1. PaginaInicio/2.ImagenesGaleria/cafetera/cafetera-1024x683px.jpg"
+                    sizes="(max-width: 480px) 40vw, 
+                    (max-width: 768px) 50vw, 
+                    (max-width: 1200px) 33vw, 
+                    (max-width: 1920px) 25vw, 
+                    20vw"
+                    alt="Cafetera sirviendo café en una taza">
+            </picture>
+```
