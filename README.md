@@ -46,3 +46,8 @@ Este proyecto utiliza las siguientes tecnologías:
 2 - Accessibility Checker:
 
 <img src="imgAct14/accessibilitychecker.png">
+
+### 4 - Modificaciones para aumentar la accesibilidad
+Según el reporte de Skynet, la web tiene varios problemas que afectan el cumplimiento del nivel AA de accesibilidad. Aquí están los más importantes y cómo corregirlos:
+
+<img src="imgAct14/errores-skynet.png">
