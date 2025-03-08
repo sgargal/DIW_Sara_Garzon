@@ -5,13 +5,13 @@ import { createHtmlPlugin } from 'vite-plugin-html';
 export default defineConfig({
    appType: 'mpa', // Indica que es un proyecto multipágina
    base: './',
-   root: __dirname, 
+   root: resolve(__dirname, 'fuente'), 
    build: {
       outDir: 'produccion',
       emptyOutDir: true,    //Vacía el directorio de producción antes de compilar
       rollupOptions: {
          input: {
-         main: resolve(__dirname, 'index.html'),
+         main: resolve(__dirname, 'fuente/index.html'),
          carta: resolve(__dirname, 'fuente/html/Carta.html'),
          pedidos: resolve(__dirname, 'fuente/html/Pedidos.html'),
          cafes: resolve(__dirname, 'fuente/html/Cafes.html'),
