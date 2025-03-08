@@ -58,6 +58,7 @@ Según el reporte de Skynet, la web tiene varios problemas que afectan el cumpli
     ``<li><a href="../index.html#nosotros" target="_blank" title="Se abrirá en una nueva pestaña">Nosotros</a></li>``
     
 2 - Problemas con Títulos y Jerarquía
+
 De `<h1>` paso directamente a `<h3>`
 
 Antes: 
@@ -155,4 +156,86 @@ Después:
                     20vw"
                     alt="Cafetera sirviendo café en una taza">
             </picture>
+```
+5 -  Iframes sin title
+
+El iframe del mapa no tiene un title accesible
+
+Antes: 
+
+```html
+<section class="map">
+            <h2>UBICACIÓN</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1589.4701755926815!2d-3.593211600000043!3d37.177888500000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcb86fcdfbfb%3A0x1abbc3a696d7eea6!2sPuente%20de%20Espinosa%2C%20Granada!5e0!3m2!1ses!2ses!4v1739532922980!5m2!1ses!2ses" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+```
+
+Después:
+
+```html
+<section class="map">
+            <h2>UBICACIÓN</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1589.4701755926815!2d-3.593211600000043!3d37.177888500000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcb86fcdfbfb%3A0x1abbc3a696d7eea6!2sPuente%20de%20Espinosa%2C%20Granada!5e0!3m2!1ses!2ses!4v1739532922980!5m2!1ses!2ses" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Ubicación en Google Maps">
+            </iframe>
+        </section>
+```
+
+6 - Problemas de Navegación
+
+El orden del tab no es lógico
+
+Antes: 
+
+```html
+<footer class="footer">
+        <section class="texto-footer">
+            <p>TÉRMINOS Y CONDICIONES</p>
+            <p>Preguntas frecuentes</p>
+        </section>
+        <!-- ICONOS DE REDES SOCIALES -->
+        <section class="redesSociales">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../img/IMG_AVIF/RedesSociales/logoInstagram/logoInstagram-1024x1024.avif">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../img/IMG_AVIF/RedesSociales/logoFcebook/logoFacebook-1024x1024.avif">
+            </a>
+            <a href="https://www.x.com" target="_blank">
+                <img src="../img/IMG_AVIF/RedesSociales/logoX/logoX-1024x1047.avif">
+            </a>
+        </section>
+    </footer>
+```
+
+Después:
+
+```html
+<footer class="footer">
+        <section class="texto-footer">
+            <p tabindex="0">TÉRMINOS Y CONDICIONES</p>
+            <p tabindex="0">Preguntas frecuentes</p>
+        </section>
+        <!-- ICONOS DE REDES SOCIALES -->
+        <section class="redesSociales">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../img/IMG_AVIF/RedesSociales/logoInstagram/logoInstagram-1024x1024.avif">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../img/IMG_AVIF/RedesSociales/logoFcebook/logoFacebook-1024x1024.avif">
+            </a>
+            <a href="https://www.x.com" target="_blank">
+                <img src="../img/IMG_AVIF/RedesSociales/logoX/logoX-1024x1047.avif">
+            </a>
+        </section>
+    </footer>
 ```
