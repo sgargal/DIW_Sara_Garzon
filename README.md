@@ -58,7 +58,7 @@ Según el reporte de Skynet, la web tiene varios problemas que afectan el cumpli
     ``<li><a href="../index.html#nosotros" target="_blank" title="Se abrirá en una nueva pestaña">Nosotros</a></li>``
     
 2 - Problemas con Títulos y Jerarquía
-De <h1> paso directamente a <h3>
+De "<h1>" paso directamente a "<h3>"
 
 Antes: 
 
