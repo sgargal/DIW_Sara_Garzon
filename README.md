@@ -51,3 +51,10 @@ Este proyecto utiliza las siguientes tecnologías:
 Según el reporte de Skynet, la web tiene varios problemas que afectan el cumplimiento del nivel AA de accesibilidad. Aquí están los más importantes y cómo corregirlos:
 
 <img src="imgAct14/errores-skynet.png">
+
+1 - Enlaces que abren en nueva pestaña sin advertencia
+    Para enlaces que abren en nueva pestaña añadir una advertencia (se abre en una nueva pestaña):
+
+    ``<li><a href="../index.html#nosotros" target="_blank" title="Se abrirá en una nueva pestaña">Nosotros</a></li>``
+    
+   
