@@ -25,6 +25,13 @@ Este proyecto utiliza las siguientes tecnologías:
 `` npm run build ``
 
 ## PRUEBAS DE ACCESIBILIDAD
+### 1 - Despliegue
   Para comenzar a realizar las pruebas de accesibilidad lo primero que hice fue desplegar la web en Netlify. Para ello subí la carpeta que contiene todos los archivos de mi web y le cambié el nombre del dominio. 
   
   <img src="imgAct14/despliegue.png">
+
+### 2 - Herramientas
+  Para comprobar la accesibilidad de mi web he usado dos herramientas:
+
+  1 - <a href="https://freeaccessibilitychecker.skynettechnologies.com/">SkyNet Technologies</a>
+  2 - Accessibility Checker
