@@ -260,7 +260,7 @@ $colores: (
 
 .formulario {
     @include fuentes('QuickSand', 1rem, 1.5, uppercase);
-    max-width: 50%; // Reduce el ancho para un mejor centrado
+    max-width: 60%; // Reduce el ancho para un mejor centrado
     margin: 40px auto;
     padding: 20px;
     border-radius: 10px;
@@ -352,6 +352,30 @@ $colores: (
     button:hover {
         background-color: #825c33;
     }
+
+    @media (max-width: 768px) { // Ajuste para tablets y móviles
+        .formulario {
+            max-width: 100%; 
+            width: 95%;
+        }
+    
+        input, select, textarea {
+            width: 90%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .formulario {
+            max-width: 100%;
+            width: 95%;
+            padding: 15px;
+        }
+            
+        input, select, textarea {
+            width: 90%;
+        }
+    }
+    
 }
 
 .cafes {

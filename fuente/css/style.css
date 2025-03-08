@@ -249,7 +249,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   text-transform: uppercase;
-  max-width: 50%;
+  max-width: 60%;
   margin: 40px auto;
   padding: 20px;
   border-radius: 10px;
@@ -330,6 +330,25 @@ body {
 }
 .formulario button:hover {
   background-color: #825c33;
+}
+@media (max-width: 768px) {
+  .formulario .formulario {
+    max-width: 100%;
+    width: 95%;
+  }
+  .formulario input, .formulario select, .formulario textarea {
+    width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  .formulario .formulario {
+    max-width: 100%;
+    width: 95%;
+    padding: 15px;
+  }
+  .formulario input, .formulario select, .formulario textarea {
+    width: 90%;
+  }
 }
 
 .cafes {
