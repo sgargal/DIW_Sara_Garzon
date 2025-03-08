@@ -12,9 +12,9 @@ export default defineConfig({
       rollupOptions: {
          input: {
          main: resolve(__dirname, 'index.html'),
-         carta: resolve(__dirname, 'fuente/html/carta.html'),
-         pedidos: resolve(__dirname, 'fuente/html/pedidos.html'),
-         cafes: resolve(__dirname, 'fuente/html/cafes.html'),
+         carta: resolve(__dirname, 'fuente/html/Carta.html'),
+         pedidos: resolve(__dirname, 'fuente/html/Pedidos.html'),
+         cafes: resolve(__dirname, 'fuente/html/Cafes.html'),
          },
       },
       minify: 'terser', // Asegura que JS y CSS también se minimicen
