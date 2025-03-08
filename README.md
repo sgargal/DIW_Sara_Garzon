@@ -23,3 +23,7 @@ Este proyecto utiliza las siguientes tecnologías:
 
 3 - Si quieres construir el proyecto:
 `` npm run build ``
+
+## PRUEBAS DE ACCESIBILIDAD
+  Para comenzar a realizar las pruebas de accesibilidad lo primero que hice fue desplegar la web en Netlify. Para ello subí la carpeta que contiene todos los archivos de mi web y le cambié el nombre del dominio. 
+  <img src="imgAct14/despliegue">
