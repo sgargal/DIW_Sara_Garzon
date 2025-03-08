@@ -190,3 +190,52 @@ Después:
         </section>
 ```
 
+6 - Problemas de Navegación
+
+El orden del tab no es lógico
+
+Antes: 
+
+```html
+<footer class="footer">
+        <section class="texto-footer">
+            <p>TÉRMINOS Y CONDICIONES</p>
+            <p>Preguntas frecuentes</p>
+        </section>
+        <!-- ICONOS DE REDES SOCIALES -->
+        <section class="redesSociales">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../img/IMG_AVIF/RedesSociales/logoInstagram/logoInstagram-1024x1024.avif">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../img/IMG_AVIF/RedesSociales/logoFcebook/logoFacebook-1024x1024.avif">
+            </a>
+            <a href="https://www.x.com" target="_blank">
+                <img src="../img/IMG_AVIF/RedesSociales/logoX/logoX-1024x1047.avif">
+            </a>
+        </section>
+    </footer>
+```
+
+Después:
+
+```html
+<footer class="footer">
+        <section class="texto-footer">
+            <p tabindex="0">TÉRMINOS Y CONDICIONES</p>
+            <p tabindex="0">Preguntas frecuentes</p>
+        </section>
+        <!-- ICONOS DE REDES SOCIALES -->
+        <section class="redesSociales">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../img/IMG_AVIF/RedesSociales/logoInstagram/logoInstagram-1024x1024.avif">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../img/IMG_AVIF/RedesSociales/logoFcebook/logoFacebook-1024x1024.avif">
+            </a>
+            <a href="https://www.x.com" target="_blank">
+                <img src="../img/IMG_AVIF/RedesSociales/logoX/logoX-1024x1047.avif">
+            </a>
+        </section>
+    </footer>
+```
