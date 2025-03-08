@@ -57,4 +57,22 @@ Según el reporte de Skynet, la web tiene varios problemas que afectan el cumpli
 
     ``<li><a href="../index.html#nosotros" target="_blank" title="Se abrirá en una nueva pestaña">Nosotros</a></li>``
     
-   
+2 - Problemas con Títulos y Jerarquía
+De <h1> paso directamente a <h3>
+Antes: 
+``<section class="nosotros" id="nosotros">
+            <h3>SOBRE NOSOTROS</h3>
+            <p>Aroma Urbano nació del sueño de compartir una pasión: el amor por el buen café. Queríamos crear un espacio donde cada taza cuente una historia, donde el aroma del café recién molido despierte los sentidos y transporte a nuestros visitantes a las tierras de origen de nuestros granos.
+                Seleccionamos cuidadosamente cafés de especialidad de fincas sostenibles. Nuestros baristas, expertos en la preparación de café, se encargan de extraer lo mejor de cada grano, resaltando sus sabores y aromas únicos.
+                Te invitamos a ser parte de nuestra historia y a descubrir, en cada sorbo, el cariño, la dedicación y la pasión que nos impulsan. En Aroma Urbano, cada taza es un viaje único.</p>
+        </section>``
+Después:
+
+`` <section class="nosotros" id="nosotros">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>Aroma Urbano nació del sueño de compartir una pasión: el amor por el buen café. Queríamos crear un espacio donde cada taza cuente una historia, donde el aroma del café recién molido despierte los sentidos y transporte a nuestros visitantes a las tierras de origen de nuestros granos.
+                Seleccionamos cuidadosamente cafés de especialidad de fincas sostenibles. Nuestros baristas, expertos en la preparación de café, se encargan de extraer lo mejor de cada grano, resaltando sus sabores y aromas únicos.
+                Te invitamos a ser parte de nuestra historia y a descubrir, en cada sorbo, el cariño, la dedicación y la pasión que nos impulsan. En Aroma Urbano, cada taza es un viaje único.</p>
+        </section>``
+Además también he tenido que cambiar el scss.
+
