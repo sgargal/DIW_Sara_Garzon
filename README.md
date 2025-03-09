@@ -239,3 +239,7 @@ Después:
         </section>
     </footer>
 ```
+### 4 - Comprobación
+Después de los cambios realizados desplegué de nuevo la web y usé la herramienta Lighthouse, la cual desde el f12 se puede acceder, y estos fueron los resultados. En rendimiento se podría mejorar pero en cuanto a tema de accesibilidad está bien.
+
+<img src="imgAct14/resultados.png">
